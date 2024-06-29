@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natura&Co</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+
+    <script src="https://kit.fontawesome.com/39a3072a96.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="img/envira.svg">
+
+    <!-- <script src="js/slider.js"></script>
+    <link rel="stylesheet" href="css/slider.css"> -->
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html"><h1 class="logo">Natura&CO</h1></a>
+
+        <nav>
+            <ul>
+                <li><a href="about.html"><i class="fa-brands fa-envira"></i>About</a></li>
+                <li><a href="products.html"><i class="fa-brands fa-envira"></i>Products</a></li>
+                <li><a href="news.html"><i class="fa-brands fa-envira"></i>News</a></li>
+                <li><a href="contacts.html"><i class="fa-brands fa-envira"></i>Contacts</a></li>
+            </ul>
+        </nav>
+
+        <div class="ico-nav">
+            <a id="profile-icon" data-target="profile-sidebar"><i class="fa-solid fa-user"></i></a>
+            <a id="cart-icon" data-target="cart-sidebar"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a id="search-icon" data-target="search-bar"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        
+        <div id="profile-sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar('profile-sidebar')">&times;</a>
+            <div class="sidebar-content">
+                <h2>My Profile</h2>
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="img/user pfp.jpg" alt="Profile Picture" class="profile-picture">
+                    </div>
+                    <div class="user-profile">
+                        <p><b>Stella Traficante</b></p>
+                        <a href="#" class="btn">EDIT PROFILE</a>
+                    </div>
+                </div>
+                <div class="profile-buttons">
+                    <nav>
+                        <ul>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#">Account Infos</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#">Favourites</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#">Orders</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#">Support</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#">Log out</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+        <div id="cart-sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar('cart-sidebar')">&times;</a>
+            <div class="sidebar-content">
+                <h2>Carrello</h2>
+                <div class="cart-container">
+                    <div class="cart-product">
+                        <div class="cart-product-img">
+                            <img src="img/prodotto 3.png" alt="">
+                        </div>
+                        <div class="cart-product-desc">
+                            <p>Nome prodotto</p>
+                            <h5>€20</h5>
+                            <div class="cart-product-quantity">
+                                <i class="fa-solid fa-minus quantity-decrease"></i>
+                                <p class="quantity-value">1</p>
+                                <i class="fa-solid fa-plus quantity-increase"></i>
+                            </div>
+                        </div>
+                        <div class="heart-icon-container"> <!-- Contenitore per l'icona del cuore -->
+                            <i class="fa-regular fa-heart heart-icon"></i> <!-- Icona a forma di cuore -->
+                        </div>
+                    </div>
+                    <div class="cart-product">
+                        <div class="cart-product-img">
+                            <img src="img/prodotto 9.png" alt="">
+                        </div>
+                        <div class="cart-product-desc">
+                            <p>Nome prodotto</p>
+                            <h5>€20</h5>
+                            <div class="cart-product-quantity">
+                                <i class="fa-solid fa-minus quantity-decrease"></i>
+                                <p class="quantity-value">1</p>
+                                <i class="fa-solid fa-plus quantity-increase"></i>
+                            </div>
+                        </div>
+                        <div class="heart-icon-container"> <!-- Contenitore per l'icona del cuore -->
+                            <i class="fa-regular fa-heart heart-icon"></i> <!-- Icona a forma di cuore -->
+                        </div>
+                    </div>
+                    <a href="#" class="btn">CHECK OUT</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="search-bar" class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-page">
+            <div class="contact-title c-container">
+                <h1>Contact Us</h1>
+                <p>Have questions or need assistance? Get in touch with us!</p>
+            </div>
+            
+            <div class="contact-infos c-container">
+                <h6>Get in Touch</h6>
+                <div class="contact-info-grid">
+                    <div class="contact-info">
+                        <p><b>Address</b></p>
+                        <p>21 Newstreet, Chaitan town, India, 109-74</p>
+                    </div>
+                    <div class="contact-info">
+                        <p><b>Phone</b></p>
+                        <p>+700800-50-800</p>
+                    </div>
+                    <div class="contact-info">
+                        <p><b>Email</b></p>
+                        <p>manager@chaitan.md</p>
+                    </div>
+                    <div class="contact-info">
+                        <p><b>Socials</b></p>
+                        <div class="contact-icons">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <div class="c-container">
+                <h2>Send Us a Message</h2>
+                <p>Use the form below to send us a message directly. We'll get back to you as soon as possible.</p>
+            </div>
+            
+            <form id="contactForm" class="f-container">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn">SUBMIT</button>
+                <div id="responseMessage"></div>
+            </form>
+            
+        </section>
+    </main>
+
+    <footer class="contact-footer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.020404542415!2d11.230505612534381!3d43.77243527097628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a56b45845e401%3A0x113682f457f9b22b!2sOkubo%20Station!5e0!3m2!1sen!2sit!4v1717350925194!5m2!1sen!2sit" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+
+    <script src="js/sidebar.js"></script>
+
+    <script src="js/form_script.js"></script>
+</body>
+</html>

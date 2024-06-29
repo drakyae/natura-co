@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natura&Co</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+
+    <script src="https://kit.fontawesome.com/39a3072a96.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="img/envira.svg">
+
+    <script src="js/slider.js"></script>
+    <link rel="stylesheet" href="css/slider.css">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css"> -->
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar sfondo-header">
+        <a href="index.html"><h1 class="logo">Natura&CO</h1></a>
+
+        <nav>
+            <ul>
+                <li><a href="about.html"><i class="fa-brands fa-envira"></i>About</a></li>
+                <li><a href="products.html"><i class="fa-brands fa-envira"></i>Products</a></li>
+                <li><a href="news.html"><i class="fa-brands fa-envira"></i>News</a></li>
+                <li><a href="contacts.html"><i class="fa-brands fa-envira"></i>Contacts</a></li>
+            </ul>
+        </nav>
+
+        <div class="ico-nav">
+            <a id="profile-icon" data-target="profile-sidebar"><i class="fa-solid fa-user"></i></a>
+            <a id="cart-icon" data-target="cart-sidebar"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a id="search-icon" data-target="search-bar"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        
+        <div id="profile-sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar('profile-sidebar')">&times;</a>
+            <div class="sidebar-content">
+                <h2>My Profile</h2>
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="img/user pfp.jpg" alt="Profile Picture" class="profile-picture">
+                    </div>
+                    <div class="user-profile">
+                        <p><b>Stella Traficante</b></p>
+                        <a href="#" class="btn">EDIT PROFILE</a>
+                    </div>
+                </div>
+                <div class="profile-buttons">
+                    <nav>
+                        <ul>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#">Account Infos</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#">Favourites</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#">Orders</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#">Support</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#">Log out</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+        <div id="cart-sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar('cart-sidebar')">&times;</a>
+            <div class="sidebar-content">
+                <h2>Carrello</h2>
+                <div class="cart-container">
+                    <div class="cart-product">
+                        <div class="cart-product-img">
+                            <img src="img/prodotto 3.png" alt="">
+                        </div>
+                        <div class="cart-product-desc">
+                            <p>Nome prodotto</p>
+                            <h5>€20</h5>
+                            <div class="cart-product-quantity">
+                                <i class="fa-solid fa-minus quantity-decrease"></i>
+                                <p class="quantity-value">1</p>
+                                <i class="fa-solid fa-plus quantity-increase"></i>
+                            </div>
+                        </div>
+                        <div class="heart-icon-container"> <!-- Contenitore per l'icona del cuore -->
+                            <i class="fa-regular fa-heart heart-icon"></i> <!-- Icona a forma di cuore -->
+                        </div>
+                    </div>
+                    <div class="cart-product">
+                        <div class="cart-product-img">
+                            <img src="img/prodotto 9.png" alt="">
+                        </div>
+                        <div class="cart-product-desc">
+                            <p>Nome prodotto</p>
+                            <h5>€20</h5>
+                            <div class="cart-product-quantity">
+                                <i class="fa-solid fa-minus quantity-decrease"></i>
+                                <p class="quantity-value">1</p>
+                                <i class="fa-solid fa-plus quantity-increase"></i>
+                            </div>
+                        </div>
+                        <div class="heart-icon-container"> <!-- Contenitore per l'icona del cuore -->
+                            <i class="fa-regular fa-heart heart-icon"></i> <!-- Icona a forma di cuore -->
+                        </div>
+                    </div>
+                    <a href="#" class="btn">CHECK OUT</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="search-bar" class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+    </header>
+
+    <main>
+        <section class="main-carousel ft-news">
+            <div class="carousel-cell big-news ft-news1">
+              <h2>New Arrival: Immune-Boosting Elixir</h2>
+              <p><em>May 1, 2024</em></p> <br>
+              <p>We are thrilled to introduce our latest product – the Immune-Boosting Elixir! <br>
+                This potent blend of natural herbs is designed to strengthen your immune system and support overall wellness. <br>
+                Made with premium ingredients like echinacea, elderberry, and ginger, our elixir is your go-to solution for staying healthy year-round. <br>
+                Experience the power of nature in every drop!</p>
+            </div>
+            <div class="carousel-cell big-news ft-news2">
+              <h2>Join Us for the Spring Wellness Workshop!</h2>
+              <p><em>April 20, 2024</em></p> <br>
+              <p>Mark your calendars for our upcoming Spring Wellness Workshop on May 15, 2024! <br>
+                This interactive event will cover a range of topics including herbal remedies for seasonal health, DIY skincare recipes, and mindfulness practices. <br>
+                Don't miss out on this opportunity to learn from our experts and enhance your wellness routine. Registration is now open!</p>
+            </div>
+        </section>
+
+        <section class="cta-purchase">
+            <div class="vantaggi">
+                <div class="perk">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    <div class="perk-desc">
+                        <h6>Order online</h6>
+                        <p>Order our products via mobile</p>
+                    </div>
+                </div>
+                <div class="perk">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <div class="perk-desc">
+                        <h6>Free shipping</h6>
+                        <p>For all orders from €30</p>
+                    </div>
+                </div>
+                <div class="perk">
+                    <i class="fa-brands fa-pagelines"></i>
+                    <div class="perk-desc">
+                        <h6>More freshness</h6>
+                        <p>All 100% natural products</p>
+                    </div>
+                </div>
+                <div class="perk">
+                    <i class="fa-regular fa-credit-card"></i>
+                    <div class="perk-desc">
+                        <h6>Safe payment</h6>
+                        <p>Protect online payment</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-title">
+            <h1>Latest News & Updates</h1>
+            <p>Stay Informed with Our Latest News</p>
+        </section>
+
+        <section class="notizie-grid">
+
+            <div id="news1" class="notizia" data-title="New arrival: Immune-boosting Elixir" data-date="June 2, 2024" data-content="We are excited to introduce our latest product: the Immune-Boosting Elixir. 
+            
+            This potent blend is crafted from a selection of herbs known for their immune-supporting properties, including echinacea, elderberry, and astragalus.
+            Each ingredient is carefully sourced to ensure the highest quality and efficacy. This elixir is designed to support your immune system through seasonal changes and help maintain overall health.
+            Perfect for those looking to enhance their body's natural defenses, the Immune-Boosting Elixir is a must-have addition to your wellness routine.
+            
+            Available now in store and online!">
+                <div class="img-notizia img-notizia1"></div>
+                <div class="notizia-caption">
+                    <h6>New arrival: Immune-boosting Elixir</h6>
+                    <p class="date">June 2, 2024</p>
+                    <p>Discover our latest addition: a blend of immune-boosting herbs to support you during seasonal transitions.</p>
+                </div>
+            </div>
+            <div id="news3" class="notizia" data-title="Spring Wellness Workshop" data-date="May 15, 2024" data-content="Join us for our Spring Wellness Workshop, a unique event dedicated to rejuvenating your body and mind using natural methods.
+            
+            On May 15, 2024, our expert herbalists will guide you through the benefits of spring herbs such as dandelion, nettle, and burdock.
+            You'll learn how to incorporate these powerful plants into your daily routine to promote detoxification, boost energy levels, and improve overall wellbeing.
+            The workshop will include interactive sessions, hands-on demonstrations, and a Q&A segment where you can get personalized advice.
+            
+            Don't miss this opportunity to embrace the season's natural bounty and enhance your wellness journey.
+            Reserve your spot today!">
+                <div class="img-notizia img-notizia2"></div>
+                <div class="notizia-caption">
+                    <h6>Spring Wellness Workshop</h6>
+                    <p class="date">May 15, 2024</p>
+                    <p>Join us for a workshop focused on spring wellness. Learn about natural ways to rejuvenate your body and mind.</p>
+                </div>
+            </div>
+            <div id="news2" class="notizia" data-title="Expert Advice: Herbal Remedies for Stress Relief" data-date="December 22, 2024" data-content="Delve into herbal stress relief with our resident herbalist's expert insights. In today's fast-paced world, finding moments of calm amidst the chaos is essential.
+            
+            Discover how nature's remedies, like chamomile, ashwagandha, lavender, and passionflower, can help you navigate daily stressors.
+            Our expert provides practical tips on incorporating these herbs into your routine, offering a pathway to tranquility and balance in your life.
+            
+            Join us on this enriching journey as we embrace the wisdom of nature and cultivate a harmonious balance between mind, body, and spirit.
+            With our expert advice and nature's bountiful offerings, you'll discover newfound resilience and serenity to face life's challenges with grace and poise.">
+                <div class="img-notizia img-notizia3"></div>
+                <div class="notizia-caption">
+                    <h6>Expert Advice: Herbal Remedies for Stress Relief</h6>
+                    <p class="date">April 25, 2024</p>
+                    <p>Dive into the world of herbal stress relief with insights from our resident herbalist. Learn how to incorporate nature's remedies into your daily routine to find calm and balance amidst life's challenges.</p>
+                </div>
+            </div>
+            <!-- Add more news items as needed -->
+            <div class="notizia" data-title="Our New Line of Organic Herbal Teas is Here!" data-date="May 10, 2024" data-content="Experience the rich flavors and health benefits of our herbal teas at our upcoming tasting event on April 20, 2024.
+            
+            This event is perfect for tea enthusiasts and anyone interested in exploring natural health remedies. Our selection includes blends designed to support relaxation, digestion, and overall vitality.
+            You will have the opportunity to sample a variety of teas, learn about the unique properties of each herb, and discover the perfect blend for your personal wellness needs.
+            
+            Join us for an afternoon of discovery, relaxation, and delightful flavors.
+            Seats are limited, so be sure to book your place early!">
+                <div class="img-notizia img-notizia4"></div>
+                <div class="notizia-caption">
+                    <h6>Our New Line of Organic Herbal Teas is Here!</h6>
+                    <p class="date">May 10, 2024</p>
+                    <p>We’re thrilled to introduce our new collection of organic herbal teas. Each blend is crafted with the finest ingredients to promote health and relaxation.</p>
+                </div>
+            </div>
+            <div class="notizia" data-title="Introducing the Revitalize Shampoo" data-date="April 25, 2024" data-content="We are thrilled to introduce our newest product: the Revitalize Shampoo.
+            
+            This luxurious shampoo is crafted with a unique blend of botanical extracts designed to nourish and strengthen your hair.
+            Infused with chamomile, nettle, and rosemary, it offers soothing properties, fortifies hair shafts, and stimulates scalp circulation for healthier hair growth.
+            Additionally, aloe vera deeply hydrates, while a hint of peppermint provides a refreshing, invigorating sensation. Free from sulfates, parabens, and artificial fragrances, the Revitalize Shampoo is perfect for all hair types and is gentle enough for daily use.
+            
+            Available now in-store and online, it’s the natural choice for beautiful, vibrant hair.">
+                <div class="img-notizia img-notizia5"></div>
+                <div class="notizia-caption">
+                    <h6>Introducing the Revitalize Shampoo</h6>
+                    <p class="date">April 25, 2024</p>
+                    <p>Our latest Revitalize Shampoo is packed with botanical extracts to nourish and strengthen your hair. Available now in our store!</p>
+                </div>
+            </div>
+            <div class="notizia" data-title="Herbal Remedies for Better Sleep" data-date="June 04, 2024" data-content="Discover natural ways to improve your sleep with our expert tips on herbal remedies.
+            
+            In today's fast-paced world, quality sleep is more crucial than ever for maintaining overall health and well-being. Our guide delves into various herbal solutions that can help you achieve a restful night's sleep.
+            Learn about the calming properties of chamomile tea, renowned for its ability to reduce anxiety and promote relaxation.
+            
+            Explore the soothing effects of lavender oil, which can be used in aromatherapy to create a tranquil sleep environment.
+            Additionally, we discuss valerian root, a powerful herb that has been used for centuries to combat insomnia and enhance sleep quality.
+            Whether you're struggling with occasional sleeplessness or chronic sleep issues, our comprehensive guide offers natural, effective remedies tailored to your needs.
+            
+            Embrace the power of nature to transform your sleep patterns and wake up feeling refreshed and rejuvenated.">
+                <div class="img-notizia img-notizia6"></div>
+                <div class="notizia-caption">
+                    <h6>Herbal Remedies for Better Sleep</h6>
+                    <p class="date">April 25, 2024</p>
+                    <p>Discover natural ways to improve your sleep with our expert tips on herbal remedies. From chamomile tea to lavender oil, find out what works best for you.</p>
+                </div>
+            </div>
+            <div class="notizia" data-title="Supporting Local Farmers" data-date="December 22, 2024" data-content="Learn how we’re partnering with local farmers to source the best organic herbs and support sustainable agriculture in our community.
+            
+            At the heart of our mission is a commitment to sustainability and community.
+            By collaborating with local farmers, we ensure that our products are made from the freshest, highest-quality herbs while also promoting environmentally friendly farming practices.
+            This partnership not only helps us provide superior products to our customers but also supports the livelihoods of small-scale farmers dedicated to organic and sustainable agriculture.
+            Through this initiative, we aim to reduce our carbon footprint, encourage biodiversity, and contribute to the health of our local ecosystem.
+            
+            Join us in celebrating these farmers who are the backbone of our supply chain and learn more about their dedication to producing herbs that are good for you and the planet.
+            Together, we can make a positive impact on our community and the environment.">
+                <div class="img-notizia img-notizia7"></div>
+                <div class="notizia-caption">
+                    <h6>Supporting Local Farmers</h6>
+                    <p class="date">April 25, 2024</p>
+                    <p>Learn how we’re partnering with local farmers to source the best organic herbs and support sustainable agriculture in our community.</p>
+                </div>
+            </div>
+            <div class="notizia" data-title="Natura&CO Wins Best Small Business Award" data-date="December 22, 2024" data-content="We’re honored to be recognized as the Best Small Business of 2024.
+            
+            This prestigious award is a testament to our dedication to excellence, innovation, and customer satisfaction.
+            Over the years, Herbal Haven has strived to provide top-notch herbal products and exceptional service, and this accolade reflects our unwavering commitment to those goals.
+            In this press release, we share the journey that led to this achievement, highlighting key milestones and the hard work of our passionate team. From sourcing the finest organic ingredients to implementing sustainable practices and delivering outstanding customer experiences, every aspect of our business has been driven by a desire to excel.
+            
+            We extend our heartfelt gratitude to our loyal customers and community for their support, which has been instrumental in our success.
+            Read more about this achievement and our plans for the future as we continue to grow and innovate in the world of herbal wellness.">
+                <div class="img-notizia img-notizia8"></div>
+                <div class="notizia-caption">
+                    <h6>Natura&CO Wins Best Small Business Award</h6>
+                    <p class="date">April 25, 2024</p>
+                    <p>We’re honored to be recognized as the Best Small Business of 2024. Read more about this achievement and our commitment to excellence.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Pop-up Modal -->
+    <div id="newsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDate"></p>
+            <p id="modalContent"></p>
+        </div>
+    </div>
+
+    </main>
+
+    <footer>
+        <div class="footer1">
+            <a href="index.html"><p class="logo">Natura&CO</p></a>
+    
+            <div class="socials">
+                <p>Follow us</p>
+                <p>-</p>
+    
+                <div class="icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer2 contacts">
+            <h6>Contacts</h6>
+            <p>21 Newstreet, Chaitan town, India, 109-74</p> <br>
+            <p>+700800-50-800 <br>
+                manager@chaitan.md</p>
+        </div>
+        <div class="footer2 explore">
+            <h6>Explore</h6>
+            <ul>
+                <li><i class="fa-solid fa-angle-right"></i><a href="index.html">Home</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="#">About us</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="#">Products</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="#">News</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/sidebar.js"></script>
+
+    <script src="js/notizie.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script> -->
+
+    <script>var elem = document.querySelector('.main-carousel');
+        var flkty = new Flickity( elem, {
+          // options
+          cellAlign: 'center',
+          contain: true,
+          autoPlay: true,
+          autoPlay: 2500,
+          wrapAround: true,
+          pageDots: true
+        });
+        
+        // element argument can be a selector string
+        //   for an individual element
+        var flkty = new Flickity( '.main-carousel', {
+          // options
+        });</script>
+
+</body>
+</html>

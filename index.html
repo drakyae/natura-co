@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natura&Co</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+
+    <script src="https://kit.fontawesome.com/39a3072a96.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="img/envira.svg">
+
+    <!-- <script src="js/slider.js"></script>
+    <link rel="stylesheet" href="css/slider.css"> -->
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html"><h1 class="logo">Natura&CO</h1></a>
+
+        <nav>
+            <ul>
+                <li><a href="about.html"><i class="fa-brands fa-envira"></i>About</a></li>
+                <li><a href="products.html"><i class="fa-brands fa-envira"></i>Products</a></li>
+                <li><a href="news.html"><i class="fa-brands fa-envira"></i>News</a></li>
+                <li><a href="contacts.html"><i class="fa-brands fa-envira"></i>Contacts</a></li>
+            </ul>
+        </nav>
+
+        <div class="ico-nav">
+            <a id="profile-icon" data-target="profile-sidebar"><i class="fa-solid fa-user"></i></a>
+            <a id="cart-icon" data-target="cart-sidebar"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a id="search-icon" data-target="search-bar"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        
+        
+        <div id="profile-sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar('profile-sidebar')">&times;</a>
+            <div class="sidebar-content">
+                <h2>My Profile</h2>
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="img/user pfp.jpg" alt="Profile Picture" class="profile-picture">
+                    </div>
+                    <div class="user-profile">
+                        <p><b>Stella Traficante</b></p>
+                        <a href="#" class="btn">EDIT PROFILE</a>
+                    </div>
+                </div>
+                <div class="profile-buttons">
+                    <nav>
+                        <ul>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#">Account Infos</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#">Favourites</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#">Orders</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#">Support</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#">Log out</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+        <div id="cart-sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar('cart-sidebar')">&times;</a>
+            <div class="sidebar-content">
+                <h2>Carrello</h2>
+                <div class="cart-container">
+                    <div class="cart-product">
+                        <div class="cart-product-img">
+                            <img src="img/prodotto 3.png" alt="">
+                        </div>
+                        <div class="cart-product-desc">
+                            <p>Nome prodotto</p>
+                            <h5>€20</h5>
+                            <div class="cart-product-quantity">
+                                <i class="fa-solid fa-minus quantity-decrease"></i>
+                                <p class="quantity-value">1</p>
+                                <i class="fa-solid fa-plus quantity-increase"></i>
+                            </div>
+                        </div>
+                        <div class="heart-icon-container"> <!-- Contenitore per l'icona del cuore -->
+                            <i class="fa-regular fa-heart heart-icon"></i> <!-- Icona a forma di cuore -->
+                        </div>
+                    </div>
+                    <div class="cart-product">
+                        <div class="cart-product-img">
+                            <img src="img/prodotto 9.png" alt="">
+                        </div>
+                        <div class="cart-product-desc">
+                            <p>Nome prodotto</p>
+                            <h5>€20</h5>
+                            <div class="cart-product-quantity">
+                                <i class="fa-solid fa-minus quantity-decrease"></i>
+                                <p class="quantity-value">1</p>
+                                <i class="fa-solid fa-plus quantity-increase"></i>
+                            </div>
+                        </div>
+                        <div class="heart-icon-container"> <!-- Contenitore per l'icona del cuore -->
+                            <i class="fa-regular fa-heart heart-icon"></i> <!-- Icona a forma di cuore -->
+                        </div>
+                    </div>
+                    <a href="#" class="btn">CHECK OUT</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="search-bar" class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+    </header>
+
+    <main>
+        <section class="title-page">
+            <div class="title-page-content">
+                <img src="img/img titolo.jpg" alt="">
+            </div>
+        </section>
+
+        <!-- <section class="title-page">
+            <div class="main-carousel">
+                <div class="carousel-cell"><img src="img/img titolo.jpg" alt=""></div>
+                <div class="carousel-cell"><img src="img/img titolo 2.jpg" alt=""></div>
+                <div class="carousel-cell"><img src="img/img titolo 3.jpg" alt=""></div>
+              </div>
+        </section> -->
+
+        <section class="cta-purchase">
+            <div class="vantaggi">
+                <div class="perk">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    <div class="perk-desc">
+                        <h6>Order online</h6>
+                        <p>Order our products via mobile</p>
+                    </div>
+                </div>
+                <div class="perk">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <div class="perk-desc">
+                        <h6>Free shipping</h6>
+                        <p>For all orders from €30</p>
+                    </div>
+                </div>
+                <div class="perk">
+                    <i class="fa-brands fa-pagelines"></i>
+                    <div class="perk-desc">
+                        <h6>More freshness</h6>
+                        <p>All 100% natural products</p>
+                    </div>
+                </div>
+                <div class="perk">
+                    <i class="fa-regular fa-credit-card"></i>
+                    <div class="perk-desc">
+                        <h6>Safe payment</h6>
+                        <p>Protect online payment</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <h3>ABOUT COMPANY</h3>
+            <h2>Discover our Herbal Haven:</h2>
+            <h2>Unveiling Nature's Remedies</h2>
+            <p><em>At our herbal haven, we're dedicated to crafting premium herbal remedies rooted in nature's wisdom. <br>
+            Explore our curated selection of organic herbs and blends, designed to nurture your well-being. <br>
+            Welcome to our sanctuary of natural healing.</em></p>
+            <a href="about.html"><p class="btn">READ MORE</p></a>
+        </section>
+        <section class="products-gallery">
+            <div class="img-gallery">
+                <img src="img/img galleria 1.jpg" alt="">
+            </div>
+            <div class="vetrina">
+                <h4>NEW ARRIVALS</h4>
+                <div class="products">
+                    <div class="product">
+                        <img src="img/prodotto 5.png" alt="">
+                        <p>Category</p>
+                        <h5>Product name</h5>
+                    </div>
+                    <div class="product">
+                        <img src="img/prodotto 2.png" alt="">
+                        <p>Category</p>
+                        <h5>Product name</h5>
+                    </div>
+                    <div class="product">
+                        <img src="img/prodotto 3.png" alt="">
+                        <p>Category</p>
+                        <h5>Product name</h5>
+                    </div>
+                    <div class="product">
+                        <img src="img/prodotto 4.png" alt="">
+                        <p>Category</p>
+                        <h5>Product name</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products-gallery">
+            <div class="vetrina">
+                <h4>NEW ARRIVALS</h4>
+                <div class="products">
+                    <div class="product">
+                        <img src="img/prodotto 6.png" alt="">
+                        <p>Category</p>
+                        <h5>Product name</h5>
+                    </div>
+                    <div class="product">
+                        <img src="img/prodotto 7.png" alt="">
+                        <p>Category</p>
+                        <h5>Product name</h5>
+                    </div>
+                    <div class="product">
+                        <img src="img/prodotto 8.png" alt="">
+                        <p>Category</p>
+                        <h5>Product name</h5>
+                    </div>
+                    <div class="more-products">
+                        <a href="products.html#shop" class="btn"><h4>MORE PRODUCTS</h4><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="img-gallery">
+                <img src="img/img galleria 2.jpg" alt="">
+            </div>
+        </section>
+        <section class="news-gallery">
+            <div class="news-container">
+                <div class="news">
+                    <!-- <img src="img/news 1.jpg" alt=""> -->
+                    <a href="news.html#news1" class="btn btn-news">READ MORE</a>
+                    <div class="img-news img-news1"></div>
+                    <div class="news-caption">
+                        <h6>New arrival: Immune-boosting Elixir</h6>
+                        <p>Discover our latest addition: a blend of immune-boosting herbs to support you during seasonal transitions.
+                        </p>
+                    </div>
+                </div>
+                <div class="news">
+                    <!-- <img src="img/news 2.jpg" alt=""> -->
+                    <a href="news.html#news2" class="btn btn-news">READ MORE</a>
+                    <div class="img-news img-news2"></div>
+                    <div class="news-caption">
+                        <h6>Expert advice: Herbal remedies for Stress relief</h6>
+                        <p>Learn how to incorporate nature's remedies into your daily routine.
+                        </p>
+                    </div>
+                </div>
+                <div class="news">
+                    <!-- <img src="img/news 3.jpg" alt=""> -->
+                    <a href="news.html#news3" class="btn btn-news">READ MORE</a>
+                    <div class="img-news img-news3"></div>
+                    <div class="news-caption">
+                        <h6>Spring wellness Workshop</h6>
+                        <p>Join us for a special workshop through herbal practices. Explore seasonal herbs, learn
+                            self-care rituals and rejuvenate your mind, body and spirit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer1">
+            <a href="index.html"><p class="logo">Natura&CO</p></a>
+    
+            <div class="socials">
+                <p>Follow us</p>
+                <p>-</p>
+    
+                <div class="icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer2 contacts">
+            <h6>Contacts</h6>
+            <p>21 Newstreet, Chaitan town, India, 109-74</p> <br>
+            <p>+700800-50-800 <br>
+                manager@chaitan.md</p>
+        </div>
+        <div class="footer2 explore">
+            <h6>Explore</h6>
+            <ul>
+                <li><i class="fa-solid fa-angle-right"></i><a href="index.html">Home</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="#">About us</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="#">Products</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="#">News</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/sidebar.js"></script>
+
+    <!-- <script>var elem = document.querySelector('.main-carousel');
+        var flkty = new Flickity( elem, {
+          // options
+          cellAlign: 'center',
+          contain: true,
+          autoPlay: true,
+          autoPlay: 2500,
+          wrapAround: true,
+          prevNextButtons: false,
+          pageDots: false
+        });
+        
+        // element argument can be a selector string
+        //   for an individual element
+        var flkty = new Flickity( '.main-carousel', {
+          // options
+        });</script> -->
+
+</body>
+</html>

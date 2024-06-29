@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natura&Co</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+
+    <script src="https://kit.fontawesome.com/39a3072a96.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="img/envira.svg">
+
+    <script src="js/slider.js"></script>
+    <link rel="stylesheet" href="css/slider.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar sfondo-header">
+        <a href="index.html"><h1 class="logo">Natura&CO</h1></a>
+
+        <nav>
+            <ul>
+                <li><a href="about.html"><i class="fa-brands fa-envira"></i>About</a></li>
+                <li><a href="products.html"><i class="fa-brands fa-envira"></i>Products</a></li>
+                <li><a href="news.html"><i class="fa-brands fa-envira"></i>News</a></li>
+                <li><a href="contacts.html"><i class="fa-brands fa-envira"></i>Contacts</a></li>
+            </ul>
+        </nav>
+
+        <div class="ico-nav">
+            <a id="profile-icon" data-target="profile-sidebar"><i class="fa-solid fa-user"></i></a>
+            <a id="cart-icon" data-target="cart-sidebar"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a id="search-icon" data-target="search-bar"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        
+        <div id="profile-sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar('profile-sidebar')">&times;</a>
+            <div class="sidebar-content">
+                <h2>My Profile</h2>
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="img/user pfp.jpg" alt="Profile Picture" class="profile-picture">
+                    </div>
+                    <div class="user-profile">
+                        <p><b>Stella Traficante</b></p>
+                        <a href="#" class="btn">EDIT PROFILE</a>
+                    </div>
+                </div>
+                <div class="profile-buttons">
+                    <nav>
+                        <ul>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#">Account Infos</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#">Favourites</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#">Orders</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#">Support</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#">Log out</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+        <div id="cart-sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar('cart-sidebar')">&times;</a>
+            <div class="sidebar-content">
+                <h2>Carrello</h2>
+                <div class="cart-container">
+                    <div class="cart-product">
+                        <div class="cart-product-img">
+                            <img src="img/prodotto 3.png" alt="">
+                        </div>
+                        <div class="cart-product-desc">
+                            <p>Nome prodotto</p>
+                            <h5>€20</h5>
+                            <div class="cart-product-quantity">
+                                <i class="fa-solid fa-minus quantity-decrease"></i>
+                                <p class="quantity-value">1</p>
+                                <i class="fa-solid fa-plus quantity-increase"></i>
+                            </div>
+                        </div>
+                        <div class="heart-icon-container"> <!-- Contenitore per l'icona del cuore -->
+                            <i class="fa-regular fa-heart heart-icon"></i> <!-- Icona a forma di cuore -->
+                        </div>
+                    </div>
+                    <div class="cart-product">
+                        <div class="cart-product-img">
+                            <img src="img/prodotto 9.png" alt="">
+                        </div>
+                        <div class="cart-product-desc">
+                            <p>Nome prodotto</p>
+                            <h5>€20</h5>
+                            <div class="cart-product-quantity">
+                                <i class="fa-solid fa-minus quantity-decrease"></i>
+                                <p class="quantity-value">1</p>
+                                <i class="fa-solid fa-plus quantity-increase"></i>
+                            </div>
+                        </div>
+                        <div class="heart-icon-container"> <!-- Contenitore per l'icona del cuore -->
+                            <i class="fa-regular fa-heart heart-icon"></i> <!-- Icona a forma di cuore -->
+                        </div>
+                    </div>
+                    <a href="#" class="btn">CHECK OUT</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="search-bar" class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+    </header>
+    
+    <main>
+        <section class="about-home">
+
+            <div class="about-title">
+                <h1>Natura&CO</h1>
+                <p><em>Our Herbal Journey: Crafting Wellness Naturally</em></p>
+            </div>
+
+            <div class="main-carousel about-carousel">
+                <div class="carousel-cell"><img src="img/img titolo 3.jpg" alt=""></div>
+                <div class="carousel-cell"><img src="img/img titolo 2.jpg" alt=""></div>
+                <div class="carousel-cell"><img src="img/img titolo.jpg" alt=""></div>
+            </div>
+        </section>
+
+        <!-- <section class="cta-purchase">
+            <div class="vantaggi">
+                <div class="perk">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    <div class="perk-desc">
+                        <h6>Order online</h6>
+                        <p>Order our products via mobile</p>
+                    </div>
+                </div>
+                <div class="perk">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <div class="perk-desc">
+                        <h6>Free shipping</h6>
+                        <p>For all orders from €30</p>
+                    </div>
+                </div>
+                <div class="perk">
+                    <i class="fa-brands fa-pagelines"></i>
+                    <div class="perk-desc">
+                        <h6>More freshness</h6>
+                        <p>All 100% natural products</p>
+                    </div>
+                </div>
+                <div class="perk">
+                    <i class="fa-regular fa-credit-card"></i>
+                    <div class="perk-desc">
+                        <h6>Safe payment</h6>
+                        <p>Protect online payment</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="our-story">
+            <h3>OUR STORY</h3>
+            <h2>Rooted in Tradition, Growing with Innovation</h2>
+            <P>Our herbal journey began with a passion for nature and a desire to harness its healing powers. <br>
+                Founded by Stella Traficante in 2004, our company has grown from a small local shop into a trusted <br>
+                name in natural wellness. Inspired by traditional herbal practices and guided by modern research, <br>
+                we continue to innovate while staying true to our roots.
+            </P>
+        </section>
+
+        <section class="our-cosmetics container">
+            <div class="our-cosmetics-title">
+                <h3>ABOUT</h3>
+                <h2>Our Cosmetics</h2>
+                <P>Nature's Beauty, Perfected</P>
+            </div>
+            <div class="our-cosmetics-info">
+                <div class="cosmetic cosmetic1">
+                    <div class="desc">
+                        <i class="fa-brands fa-pagelines"></i>
+                        <h6>Natural Ingredients</h6>
+                        <p>Our cosmetics are crafted from the highest <br>quality botanical extracts and essential oils.</p>
+                    </div>
+                    <div class="desc">
+                        <i class="fa-solid fa-shield-heart"></i>
+                        <h6>Cruelty-Free</h6>
+                        <p>We are committed to ethical practices, ensuring that <br>none of our products are tested on animals.</p>
+                    </div>
+                    <div class="desc">
+                        <i class="fa-solid fa-seedling"></i>
+                        <h6>Sustainably Sourced</h6>
+                        <p>We prioritize sustainability by sourcing our ingredients <br>responsibly and minimizing our enviromental impact.</p>
+                    </div>
+                </div>
+                <div class="cosmetic-img">
+                    <img src="img/our cosmetics.png" alt="">
+                </div>
+                <div class="cosmetic cosmetic2">
+                    <div class="desc">
+                        <i class="fa-solid fa-user-doctor"></i>
+                        <h6>Dermatologist-Tested</h6>
+                        <p>Our formulations are tested by dermatologists to ensure <br>they are safe and suitable for all skin types.</p>
+                    </div>
+                    <div class="desc">
+                        <i class="fa-solid fa-recycle"></i>
+                        <h6>Eco-Friendly-Packaging</h6>
+                        <p>Our packaging is designed to be eco-frindly, <br>using recyclable and biodegradable materials.</p>
+                    </div>
+                    <div class="desc">
+                        <i class="fa-regular fa-face-smile-beam"></i>
+                        <h6>Performance-Driven</h6>
+                        <p>Our products are not only natural but also designed <br>to delover visible results, enhancing your natural beauty</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <h3>MEET THE TEAM</h3>
+            <h2>The Faces Behind Our Herbal Haven</h2>
+            <p>Our team is a diverse group of dedicated professionals who share a common passion for natural wellness. <br>
+            From our experienced herbalists to our customer service representatives, each member plays a vital role in our mission. <br><br>
+            Get to know the people who bring our products to life.</p>
+        </section>
+
+        <section class="certifications">
+            <div class="certifications-title">
+                <h3>CERTIFICATIONS</h3>
+                <h2>Trust and Quality Guaranteed</h2>
+            </div>
+            <div class="certifications-img">
+                <img src="img/certificato-ICEA-BIO.jpg" alt="">
+                <img src="img/certificazione-iso-14001-it.jpg" alt="">
+                <img src="img/certificazione-lifegate.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="fiori">
+
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer1">
+            <a href="index.html"><p class="logo">Natura&CO</p></a>
+    
+            <div class="socials">
+                <p>Follow us</p>
+                <p>-</p>
+    
+                <div class="icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer2 contacts">
+            <h6>Contacts</h6>
+            <p>21 Newstreet, Chaitan town, India, 109-74</p> <br>
+            <p>+700800-50-800 <br>
+                manager@chaitan.md</p>
+        </div>
+        <div class="footer2 explore">
+            <h6>Explore</h6>
+            <ul>
+                <li><i class="fa-solid fa-angle-right"></i><a href="index.html">Home</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="#">About us</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="#">Products</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="#">News</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>var elem = document.querySelector('.main-carousel');
+        var flkty = new Flickity( elem, {
+          // options
+          cellAlign: 'center',
+          contain: true,
+          autoPlay: true,
+          autoPlay: 2500,
+          wrapAround: true,
+          prevNextButtons: false,
+          pageDots: false
+        });
+        
+        // element argument can be a selector string
+        //   for an individual element
+        var flkty = new Flickity( '.main-carousel', {
+          // options
+        });</script>
+
+<script src="js/sidebar.js"></script>
+
+</body>
+</html>
